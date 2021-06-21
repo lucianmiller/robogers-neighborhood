@@ -2,5 +2,6 @@
 $(document).ready(function() {
   $("form#input").submit(function(event) {
     event.preventDefault();
+    const userNum = parseInt($("#number").val());
   });
 });
