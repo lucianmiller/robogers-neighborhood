@@ -16,7 +16,6 @@ function numList(number) {
       outputArr.push(num.toString());
     };
   });
-  console.log(outputArr);
   return outputArr.join(", ");
 };
 
@@ -25,7 +24,6 @@ $(document).ready(function() {
   $("form#input").submit(function(event) {
     event.preventDefault();
     const userNum = parseInt($("#number").val());
-    console.log("user num: " + userNum);
     const finalList = (numList(userNum));
     $("#output").html(finalList);
   });
